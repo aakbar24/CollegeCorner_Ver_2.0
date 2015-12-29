@@ -1,0 +1,231 @@
+<div id="about_top_attract" class="row-fluid">
+    <div class="span10 offset1">
+        <h1><?php echo Yii::t('about', 'about.title');?></h1>
+
+        <hr/>
+
+
+        <blockquote class="modify">
+            <p>We Inspire, Inform, and Connect ICT students/candidates</p>
+        </blockquote>
+
+        <br/>
+
+        <blockquote class="modify">
+            <p>We Empower employers with the tools to grow their business</p>
+        </blockquote>
+
+
+        <hr/>
+    </div>
+</div>
+
+<div id="about_content" class="row-fluid">
+    <div class="span10 offset1">
+
+        <dl>
+            <dt id="heading_goal" class="heading"><?php echo Yii::t('about', 'about.heading.goal');?></dt>
+            <dd>At College Cornerstone, we want to help bridge the gap between <strong>students/candidates and employers</strong>.</dd>
+
+            <dd><?php echo Yii::t('about', 'about.success');?></dd>
+
+            <dt><a class="anchor"
+                   id="student_success"></a><?php echo Yii::t('about', 'about.heading.academic_success');?></dt>
+            <dd>College Cornerstone provides a forum.</dd>
+            <dd><ul><strong>
+                    <li>Tap into the experiences, knowledge and skills of your fellow colleagues.</li>
+                    <li>You are not alone. Meet and chat with student who go to your school.</li>
+                    <li>Achieve greater success by helping one another on tests, assignments and projects!</li></strong>
+            </ul></dd>
+
+
+            <dt><?php echo Yii::t('about', 'about.heading.career_success');?></dt>
+            <dd>Gain the competitive edge required to secure a job!</dd>
+            <dd><ul><strong>
+			<li>Post resume for thousands of employers to access.</li>
+<li>Select the specific job titles to narrow the search.</li>
+<li>Attain workplace experience through volunteering, internships placements and coop.</li>
+<li>Learn soft skills and identify and remove barriers to job entry.</li>
+<li>Enhance your job prospects by exploring certification that is relevant for your career development.</li>
+<li>Get the right job for career development.</li>  </strong>           
+</ul></dd>
+
+            <dt><a class="anchor"
+                   id="employer_success"></a> <?php echo Yii::t('about', 'about.heading.employer_success');?></dt>
+            <dd>Modern day employers seek to add potential to their workforce in order to help their businesses
+                grow and prosper.</dd>
+
+            <dd><ul><strong>
+                        <li>Download the student/candidate’s resumes by job titles.</li>
+                        <li>Easily find the most suitable candidate.</li>
+                        <li>Build effective and reciprocal relationship with institutions.</li>
+						<li>Learn about the skills development of different institutions and programs.</li>
+						<li>Schedule an interview with the student/candidate</li>
+					</strong>
+                </ul></dd>
+
+            <dt><?php echo Yii::t('about', 'about.heading.workshop_success');?></dt>
+            <dd>Enhance the soft-skills of ICT students/candidates <strong>getting a job and keeping it.</strong></dd>
+            <dd>Learn key skills such as <strong>cultural awareness / accommodation, effective oral and written communication, team work, leadership and decision making.</strong></dd>
+            <dd>Industry Certification for Professional Development
+			<br />
+			<br />
+			<strong>
+			Recognized Certifications are often crucial for career growth
+Find a certification that can enhance your professional 
+outlook.
+
+			</strong>
+			</dd>
+
+        </dl>
+
+        <hr/>
+
+        <dl>
+            <dt class="heading">Who are we?</dt>
+            <dd>College Cornerstone is made up of a small team of dedicated students/candidates with a love for academic excellence.
+            </dd>
+            <dd> This talented team is headed by <strong>Mohamed Khan,</strong>  an ICT professor and industry liaison. He has provided job opportunities to countless students.
+            </dd> 
+            <dd>
+                <blockquote class="modify">
+                    <p>As a ICT professor with over 25+ years, my job satisfaction comes not only from teaching, but playing a significant role in assisting thousands of students/candidates in obtaining internships, placements, coop and career jobs. I provide them with opportunities in an industry that demands work experience. These students/candidates get their feet in the door, and ultimately, into a successful career.
+					<br /><br />
+My passion to help students is now incorporated into <strong>Collegecornerstone.com</strong>. This site is unique in providing a set of integrated services – designed to assist students/candidates to be more effective in achieving academic success in their studies and career development.
+</p>
+              <small>Mohamed Khan</small>  </blockquote>
+            </dd>
+
+        </dl>
+
+        <hr/>
+
+        <dl id="about_not">
+            <dt class="heading">College Cornerstone is NOT...</dt>
+            <dd>
+                <ul>
+                    <li><p>Competing with any of the existing services offered by various colleges.</p>
+                    <p class="lead">We are unique! We focus on creating more durable and lasting networks between students/candidates and employers.</p>
+                    </li>
+                    <li><p>Asking for payment.</p>
+                        <p class="lead">The service is free to use and enjoy forever!</p>
+                    </li>
+                    <li><p>Associated with any government body or academic institution</p>
+                        <p class="lead">Your information will not be stored and used for surveys and studies. <br/> Only employers will see your "posted" information.</p>
+                    </li>
+                </ul>
+            </dd>
+
+        </dl>
+
+
+        <hr/>
+
+    </div>
+</div>
+
+<div id="about_bottom" class="row-fluid">
+    <div class="span10 offset1">
+
+        <?php echo CHtml::image(Yii::app()->getBaseUrl() . '/files/images/about_connect.jpg', Yii::t('about', 'about.footer.goal.alt'), array('class' => 'img-polaroid')); ?>
+        <!--<img src="holder.js/490x326" class="">-->
+        <p class="lead"><strong>
+                <small><?php echo Yii::t('about', 'about.footer.goal');?></small>
+            </strong></p>
+
+        <hr/>
+
+    </div>
+
+    <div id="about_team" class="span12">
+
+        <p><strong><?php echo Yii::t('about', 'about.footer.team'); ?></strong></p>
+
+        <blockquote>
+            <?php echo CHtml::image(Yii::app()->getBaseUrl() . '/files/images/team/team_mohamed.jpg');?>
+            <p><?php echo Yii::t('about', 'about.team.mohamed') ?></p>
+            <small><?php echo Yii::t('about', 'about.team.mohamed.title') ?></small>
+            <small><?php echo Yii::t('about', 'about.team.mohamed.title2') ?></small>
+        </blockquote>
+
+        <blockquote>
+            <?php echo CHtml::image(Yii::app()->getBaseUrl() . '/files/images/team/team_lyza.jpg');?>
+            <p><?php echo Yii::t('about', 'about.team.lyza') ?></p>
+            <small><?php echo Yii::t('about', 'about.team.lyza.title') ?></small>
+            <small><?php echo Yii::t('about', 'about.team.lyza.title2') ?></small>
+        </blockquote>
+
+        <blockquote>
+            <?php echo CHtml::image(Yii::app()->getBaseUrl() . '/files/images/team/team_ahmad.jpg');?> 
+            <p><?php echo Yii::t('about', 'about.team.ahmad') ?></p>
+            <small><?php echo Yii::t('about', 'about.team.ahmad.title') ?></small>
+            <small><?php echo Yii::t('about', 'about.team.ahmad.title2') ?></small>
+        </blockquote>
+
+        <blockquote>
+            <?php echo CHtml::image(Yii::app()->getBaseUrl() . '/files/images/team/team_wenbin.jpg');?>
+            <p><?php echo Yii::t('about', 'about.team.wenbin') ?></p>
+            <small><?php echo Yii::t('about', 'about.team.wenbin.title') ?></small>
+        </blockquote>
+        
+		
+				<blockquote>
+             <?php echo CHtml::image(Yii::app()->getBaseUrl() . '/files/images/team/team_fahmi.jpg');?> 
+            <p><?php echo Yii::t('about', 'about.team.fahmi') ?></p>
+            <small><?php echo Yii::t('about', 'about.team.fahmi.title') ?></small>
+			<small><?php echo Yii::t('about', 'about.team.fahmi.title2') ?></small>
+        </blockquote>
+
+		
+        <blockquote>
+            <?php echo CHtml::image(Yii::app()->getBaseUrl() . '/files/images/team/team_matthew.jpg');?>
+            <p><?php echo Yii::t('about', 'about.team.matthew') ?></p>
+            <small><?php echo Yii::t('about', 'about.team.matthew.title') ?></small>
+        </blockquote>
+
+
+        <blockquote>
+             <?php echo CHtml::image(Yii::app()->getBaseUrl() . '/files/images/team/team_yonas.jpg');?> 
+            <p><?php echo Yii::t('about', 'about.team.yonas') ?></p>
+            <small><?php echo Yii::t('about', 'about.team.yonas.title') ?></small>
+        </blockquote>
+
+        <blockquote>
+             <?php echo CHtml::image(Yii::app()->getBaseUrl() . '/files/images/team/team_nelly.jpg');?> 
+            <p><?php echo Yii::t('about', 'about.team.nelly') ?></p>
+            <small><?php echo Yii::t('about', 'about.team.nelly.title') ?></small>
+        </blockquote>
+
+
+        <!-- <ul class="thumbnails">
+            <li class="span3">
+                <div class="thumbnail">
+                    <p class="lead"><?php /*echo Yii::t('about', 'about.team.wenbin') */?></p>
+                    <p class="text-info"><?php /*echo Yii::t('about', 'about.team.wenbin.title') */?></p>
+                </div>
+            </li>
+            <li class="span3">
+                <div class="thumbnail">
+                    <p class="lead"><?php /*echo Yii::t('about', 'about.team.matthew') */?></p>
+                    <p class="text-info"><?php /*echo Yii::t('about', 'about.team.matthew.title') */?></p>
+                </div>
+            </li>
+            <li class="span3">
+                <div class="thumbnail">
+                    <p class="lead"><?php /*echo Yii::t('about', 'about.team.mohamed') */?></p>
+                    <p class="text-info"><?php /*echo Yii::t('about', 'about.team.mohamed.title') */?></p>
+                    <p class="text-info"><?php /*echo Yii::t('about', 'about.team.mohamed.title2') */?></p>
+                </div>
+            </li>
+            <li class="span3">
+                <div class="thumbnail">
+                    <p class="lead"><?php /*echo Yii::t('about', 'about.team.lyza') */?></p>
+                    <p class="text-info"><?php /*echo Yii::t('about', 'about.team.lyza.title') */?></p>
+                    <p class="text-info"><?php /*echo Yii::t('about', 'about.team.lyza.title2') */?></p>
+                </div>
+            </li>
+        </ul>-->
+    </div>
+
+</div>

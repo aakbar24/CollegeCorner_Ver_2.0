@@ -1,0 +1,209 @@
+/* 
+    Document   : forum
+    Created on : May 2, 2013, 1:11:39 PM
+    Author     : Matthew
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*OVERRIDES*/
+
+
+.forumGrid .sort-link {
+    color: #333333;
+}
+
+/*
+--------------*/
+
+root { 
+    display: block;
+}
+
+.page-header {
+    margin-bottom: 0px;
+}
+
+#searchForm {
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+#searchForm .help-block{
+    margin-left: 15px;
+    color: red;
+    display: inline;
+}
+
+#forum-topics-top-bar{
+    height: 30px;
+}
+
+.forumGrid {
+    margin-top: 5px;
+}
+
+.forumGrid .empty {
+    text-align: center;
+}
+
+.forumGrid  .filter-container{
+    text-align: center;
+}
+
+.forumGrid  .filter-container input{
+    margin: 0px;
+}
+
+#FiltersForm_progCode{
+    max-width: 80px;
+}
+
+#PostItem_title {
+    width: 100%;
+}
+
+#post-item-form{
+    margin-top: 25px;
+}
+
+.forum-alert {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.forum-alert-topics {
+    text-align: center;
+}
+
+.forum-alert-topics .alert-block {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#forum_topic_title{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.forum-main-post-seperater {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.forum-post .forum-id-box{
+    max-width: 150px;
+    width: 150px;
+    text-align: center;
+}
+
+.forum-post .avatar-holder{
+    max-width: 140px;
+    max-height: 140px;
+    min-width: 140px;
+    min-height: 140px;
+    border: 1px solid #E3E3E3;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+}
+
+.forum-post .forum-id-box h4{
+    text-align: center;
+    margin: 0px;
+    word-break: break-all;
+    
+}
+
+.forum-post .admin, .forum-post .college_admin{
+    color: #B94A48;
+}
+
+.forum-post a:hover{
+    text-decoration: none;
+}
+
+.forum-post .forum-id-box p{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-size: smaller;
+    font-weight: bold;
+}
+
+.forum-post .forum-id-box p span{
+    font-weight: normal;
+}
+
+.forum-post .well {
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.forum-post .well .forum-text-area {
+    min-height: 150px;
+    word-wrap: break-word;
+}
+
+.forum-post .well .forum-post-bottom-bar {
+    
+}
+
+.forum-post .well .forum-post-bottom-bar .forum-report, .forum-post .well .forum-post-bottom-bar .forum-report-thread{
+   margin-left: 25px;
+}
+
+.forum-post .well .forum-post-bottom-bar .forum-report .icon-warning-sign, .forum-post .well .forum-post-bottom-bar .forum-report-thread .icon-warning-sign{
+   padding-right: 3px;
+}
+
+#post-reply-form{
+    text-align: center;
+}
+
+#forum-reply-indicator{
+    display: none;
+    margin-bottom: 15px;
+}
+
+#forum-reply-indicator .forum-child-reply-cancel{
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+#forum-reply-indicator .icon-hand-down{
+    margin-top: 7px;
+}
+
+#forum-reply-indicator p{
+    display: inline;
+}
+
+.forum-no-replies{
+    font-weight: bold;
+    text-align: center;
+}
+
+#forum-btn-reply{
+    width: 200px;
+    font-weight: bold;
+}
+
+/*Forum GridView Style*/
+
+.forum_gridview .col-delete{
+    text-align: center;
+}
+
+.forum_gridview .col-delete input{
+   margin: 0px;
+}
+
+.forum_gridview .icon-trash:hover{
+   text-decoration: none;
+}
+
+.forum_gridview .col_trash{
+   text-align: center;
+}
+
+
+

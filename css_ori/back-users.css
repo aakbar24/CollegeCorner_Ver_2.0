@@ -1,0 +1,8 @@
+
+#user-grid .table tr.inactive{
+ opacity: 0.5;
+}
+
+#user-grid .table tr.not_verified{
+    background-color: #F79696;
+}

@@ -1,0 +1,37 @@
+YII
+
++++++++++++
+
+- control -> it contain which site need to be render
+-view -> sites folder. it contains individual site
+-model - cntain logic
+
+
+
+--------------
+
+string
+variale-string , number , casting, string, float , tofixed, parseint, boolean, array
+
+var ve = new Array("car",Tuck");
+ve[0]
+for(i in ve)
+{
+}
+
+-conditinal expression
+-if
+-else if
+-switch
+
+looping
+
+- while
+-do while
+-
+for()
+
+- create a external function and call it from html.
+- event handling
+-oops
+-method overloading

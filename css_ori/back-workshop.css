@@ -1,0 +1,32 @@
+
+#workshop-facilitator-form .help-block{
+    margin-bottom: 20px;
+}
+
+#facilitator .thumbnail{
+    text-align: center;
+}
+
+#facilitator img{
+    margin-top:10px;
+}
+
+#facilitator .thumbnail .well{
+    margin: 0;
+}
+
+#facilitator .thumbnail .well p{
+    margin: 0;
+}
+
+#facilitator .thumbnail .well strong{
+    float: left;
+}
+
+#facilitator .empty, #attachment .empty{
+    text-align: center;
+}
+
+#facilitator .empty p, #attachment .empty p{
+    margin-top: 10px;
+}

@@ -1,0 +1,37 @@
+/* 
+    Document   : forum
+    Created on : May 2, 2013, 1:11:39 PM
+    Author     : Matthew
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*OVERRIDES*/
+
+
+/*complaint management*/
+
+#show_complaint_help:hover, #show_complaint_help:focus{
+    text-decoration: none;
+}
+
+#manage_complaint_help{
+    display: none;
+    width: 75%;
+}
+
+#manage_complaint_help dt{
+   width: 20px;
+}
+
+#manage_complaint_help dd:not(:last-child){
+   margin-bottom: 5px;
+}
+
+#manage_complaint_help dd{
+   margin-left: 40px;
+}
+
+#manage_complaint_help i{
+color: #005580;
+}

@@ -1,0 +1,36 @@
+/* 
+    Document   : forum
+    Created on : May 2, 2013, 1:11:39 PM
+    Author     : Matthew
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*OVERRIDES*/
+
+
+/*article create*/
+
+#area_source .input-prepend, #Article_source{
+    width: 90%;
+}
+
+.thumbnail{
+    margin-bottom: 15px;
+}
+
+.source_link:hover{
+    text-decoration: none;
+}
+
+.view_date_text{
+    font-weight: lighter;
+}
+
+.view hr{
+    border: black solid 1px;
+}
+
+input[type="file"]{
+    margin-bottom: 5px;
+}

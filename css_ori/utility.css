@@ -1,0 +1,244 @@
+@CHARSET "ISO-8859-1";
+/*
+.pageFullPadding {
+	padding-top: 41px;
+}
+*/
+.pageNoPadding {
+	padding-top: 21px;
+}
+
+/* global fixed width*/
+/* .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container{
+	width:1024px;
+} */
+
+/* global form style*/
+input,textarea {
+	color: #555555 !important;
+}
+
+.pageSize-dropdown{
+	width:60px;
+	padding: 1px;
+	height: auto;
+	vertical-align: baseline;
+}
+
+/* Utilities styles 
+---------------------------------------------------------*/
+.center-text {
+	text-align: center;
+}
+
+.full-width{
+	max-width:100%;
+	width:100%;
+}
+
+/* navbar active dropdown style fixes*/
+.navbar .dropdown-menu .active>a {
+	color: white;
+}
+
+/* fix for thumbnails inside row-fluid */
+.row-fluid .thumbnails [class*="span"] {
+    margin-right: 2.5641%;
+    margin-left:0;
+}
+.row-fluid .thumbnails [class*="span"]:first-child {
+    margin-right: 2.5641%;
+    margin-bottom: 0;
+}
+/*
+// by using this python
+>>> for n in range(1,13): m=12.0/n; print ".row-fluid .thumbnails .span%d { width: %g%%;}" % (n,(100.0 - 2.5642*(m)) / m)
+*/
+.row-fluid .thumbnails .span1 { width: 5.76913%;}
+.row-fluid .thumbnails .span2 { width: 14.1025%;}
+.row-fluid .thumbnails .span3 { width: 22.4358%;}
+.row-fluid .thumbnails .span4 { width: 30.7691%;}
+.row-fluid .thumbnails .span5 { width: 39.1025%;}
+.row-fluid .thumbnails .span6 { width: 47.4358%;}
+.row-fluid .thumbnails .span7 { width: 55.7691%;}
+.row-fluid .thumbnails .span8 { width: 64.1025%;}
+.row-fluid .thumbnails .span9 { width: 72.4358%;}
+.row-fluid .thumbnails .span10 { width: 80.7691%;}
+.row-fluid .thumbnails .span11 { width: 89.1025%;}
+.row-fluid .thumbnails .span12 { width: 97.4358%;}
+
+.bootstrap-widget.thumbnail{
+	margin-bottom:0px;
+}
+/* Responsive
+-------------------------------------------------- */
+
+/* Desktop large
+------------------------- */
+@media ( min-width : 1200px) {
+	.container,.mainContainer { /* max-width: 970px; */
+		
+	}
+	.profile-menu-bar,.admin-menu {
+		width: 228px;
+	}
+}
+
+/* Desktop
+------------------------- */
+@media ( max-width : 980px) { /* When affixed, space properly */
+	.profile-menu-bar,.admin-menu {
+		margin-top: 30px;
+		margin-right: 0;
+		width: 150px;
+	}
+	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+	    padding-left: 20px;
+	}
+	.pageFullPadding {
+		padding-top: 20px;
+	}
+	.pageNoPadding {
+		padding-top: 0px;
+	}
+}
+
+/* Tablet to desktop
+------------------------- */
+@media ( min-width : 768px) and (max-width: 979px) {
+	/* Remove any padding from the body */
+	body {
+		padding-top: 0px;
+	}
+	.pageFullPadding {
+		padding-top: 0px;
+	}
+	.pageNoPadding {
+		padding-top: 0px;
+	}
+
+	/* Adjust sidenav width */
+	.profile-menu-bar, .admin-menu {
+		width: 150px;
+		margin-top: 20px;
+	}
+	
+	.profile-menu-bar .affix {
+		top: 0;
+	}
+	.modify:before {
+    	left: 0px;
+	}
+	.modify:after {
+	    right: 0px;
+	}
+}
+
+/* Tablet
+------------------------- */
+@media ( max-width : 767px) { /* Remove any padding from the body */
+	body {
+		padding-top: 0px;
+	}
+	.pageFullPadding {
+		padding-top: 0px;
+	}
+	.pageNoPadding {
+		padding-top: 0px;
+	}
+
+	/* Sidenav */
+	/*  .profile-menu{
+        width: auto;
+        margin-bottom: 110px;
+        margin-top: 30px;
+    } */
+	.profile-menu-bar .affix {
+		position: static;
+		width: auto;
+		top: 0;
+	}
+
+	/* Unfloat the back to top link in footer */
+	.footer {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.footer p {
+		margin-bottom: 9px;
+	}
+	.modify:before {
+    	left: 0px;
+	}
+	.modify:after {
+	    right: 0px;
+	}
+	
+	
+}
+
+/* Landscape phones
+------------------------- */
+@media ( max-width : 480px) { /* Remove padding above jumbotron */
+	body {
+		padding-top: 0px;
+	}
+	.pageFullPadding {
+		padding-top: 0px;
+	}
+	.pageNoPadding {
+		padding-top: 0px;
+	}
+
+	/* Change up some type stuff */
+	h2 small {
+		display: block;
+	}
+
+	/* Sidenav */
+	.profile-menu-bar, .admin-menu {
+		width: auto;
+		margin-bottom: 20px;
+	}
+	.profile-menu-bar.affix, .admin-menu.affix {
+		position: static;
+		width: auto;
+		top: 0;
+	}
+
+	/* Unfloat the back to top in footer to prevent odd text wrapping */
+	.footer .pull-right {
+		float: none;
+	}
+	.footer {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.modify:before {
+    	left: 0px;
+	}
+	.modify:after {
+	    right: 0px;
+	}
+	
+	.navbar-fixed-top,.navbar-fixed-bottom,.navbar-static-top {
+		margin-right: 0px;
+	}
+	.row-fluid .thumbnails .span1 { width: auto;}
+	.row-fluid .thumbnails .span2 { width: auto;}
+	.row-fluid .thumbnails .span3 { width: auto;}
+	.row-fluid .thumbnails .span4 { width: auto;}
+	.row-fluid .thumbnails .span5 { width: auto;}
+	.row-fluid .thumbnails .span6 { width: auto;}
+	.row-fluid .thumbnails .span7 { width: auto;}
+	.row-fluid .thumbnails .span8 { width: auto;}
+	.row-fluid .thumbnails .span9 { width: auto;}
+	.row-fluid .thumbnails .span10 { width: auto;}
+	.row-fluid .thumbnails .span11 { width: auto;}
+	.row-fluid .thumbnails .span12 { width: auto;}
+}
+

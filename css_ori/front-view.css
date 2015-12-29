@@ -1,0 +1,663 @@
+/* 
+    Document   : front-view
+    Created on : Jun 18, 2013, 10:19:43 PM
+    Author     : Matthew
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* ~~~~~ YII base CSS for front-end ~~~~~ */
+/*
+.pageFullPadding {
+    padding-top: 41px;
+}
+*/
+.pageNoPadding {
+    padding-top: 21px;
+}
+
+/* Utilities styles
+---------------------------------------------------------*/
+.center-text {
+    text-align: center;
+}
+
+.full-width{
+    max-width:100%;
+    width:100%;
+}
+
+/* navbar active dropdown style fixes*/
+.navbar .dropdown-menu .active>a {
+    color: white;
+}
+
+/* fix for thumbnails inside row-fluid */
+.row-fluid .thumbnails [class*="span"] {
+    margin-right: 2.5641%;
+    margin-left:0;
+}
+.row-fluid .thumbnails [class*="span"]:first-child {
+    margin-right: 2.5641%;
+    margin-bottom: 0;
+}
+
+/* adjust the height offset when linking to part of a page*/
+a.anchor{display: block; position: relative; top: -50px; visibility: hidden;}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.shadow-wrap.container{
+    -webkit-box-shadow: 0px 0px 20px 10px #d3d3d3;
+    -moz-box-shadow: 0px 0px 20px 10px #d3d3d3;
+    box-shadow: 0px 0px 20px 10px #d3d3d3;
+}
+
+#main-content{
+    background: #ffffff;
+   
+}
+
+
+/* -----FOOTER------ */
+
+
+#cc_footer{
+	border-top:1px solid lightgray;
+	color:gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #E3E3E3;
+    position: relative;
+}
+
+#cc_footer .bottom_nav_bar{
+    bottom: 0;
+}
+
+#cc_footer .bottom_nav_bar span{
+    margin: 5px 15px;
+    font-size: smaller;
+}
+
+#footer-sitemap, #footer-about, #footer-company{
+	margin: 20px 20px 0px 20px;
+}
+
+#footer-contact{
+	margin-top:10px;
+	border-top:2px solid #ccc;
+}
+
+#footer-contact li{
+	margin-top:15px;
+}
+
+#footer-contact li span{
+	width:70px;
+	display:inline-block;
+}
+
+#footer-sitemap ul, #footer-about ul{
+	font-size:0.875em;
+	font-weight: 300;
+}
+
+.footer-nav-title{
+	font-size:22px;
+	padding-bottom:10px;
+	border-bottom:2px dotted #ccc;
+}
+
+/* -----TOP NAVBAR------ */
+
+.navbar a.brand{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: 4px;
+}
+
+.navbar a.brand img{
+    max-height: 36px;
+}
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+ /* height: 50px;
+  background-color: red;*/
+}
+.container {
+margin-right: auto;
+margin-left: auto;
+margin-top: 200px;
+}
+
+/* -----HOMEPAGE------ */
+
+#main{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* slider */
+
+#carousel{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#homePageSlider{
+    margin: 10px 0px 15px 0px;
+    -webkit-box-shadow:  4px 4px 4px 4px rgba(0, 0, 0, 0.4);
+    box-shadow:  4px 4px 4px 4px rgba(0, 0, 0, 0.4);
+;
+}
+
+#homePageSlider img{
+    min-width: 100%;
+    max-height: 345px;
+}
+
+.btn-toolbar a.btn{
+    min-width: 155px;
+}
+
+.student div.well div.text-center .btn, .employer div.well div.text-center .btn{
+    width: 160px;
+}
+
+/* resources */
+
+#resource_area .rect-body p{
+    height: 100px;
+}
+
+#resource_area .rect-body em{
+    height: 50px;
+    display: block;
+}
+
+/* articles */
+
+#article_listings{
+    margin-top: 20px;
+}
+
+#article_listings .rowspan{
+    margin-left: 0;
+}
+
+#article_listings .hero-unit{
+    padding: 0;
+    margin: 0;
+}
+
+#article_listings .bootstrap-widget-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D5D5D5;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px;
+}
+
+#article_listings .label-date {
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+#article_listings .media-object {
+    max-width: 128px;
+    max-height: 128px;
+    min-width: 128px;
+    min-height: 128px;
+}
+
+#article_listings .bootstrap-widget-header .label{
+    position: absolute;
+    right: 0;
+    min-width: 50px;
+    text-align: center;
+}
+
+#article_listings .posting-text{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#article_listings .media .posting-text br{
+    display: none;
+}
+
+#post_items_header .nav-tabs{
+    margin-bottom: 0;
+}
+
+/* #post_items_header .breadcrumb{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    background-color: inherit;
+} */
+
+/* partners */
+
+.partner {
+    background: #999999;
+    color: #454545;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.partner .logo {
+    display: inline-block;
+    width: 170px;
+    height: 85px;
+    margin: 6px;
+    padding: 4px;
+    line-height: 20px;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.partner .logo img{
+    width: 170px;
+    height: 85px;
+}
+
+/* copyright */
+
+.copyright {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #ccc;
+    line-height: 1.3;
+    text-align: center;
+}
+
+/* -----REGISTERED PAGE------ */
+
+#registered_page h1{
+    text-transform: none;
+    text-align: center;
+}
+
+#registered_page{
+    margin: 20px;
+}
+
+/* -----CONTACT PAGE------ */
+
+#contact_form .form-actions{
+    text-align: center;
+}
+
+#contact_form .form-actions i{
+    padding-right: 5px;
+}
+
+/* -----ABOUT PAGE------ */
+
+#about_top_attract, #about_bottom{
+    text-align: center;
+}
+
+#about_top_attract blockquote{
+    margin: 15px 0;
+}
+
+#about_content .heading{
+    font-size: 150%;
+}
+
+
+#about_content dt{
+    margin-bottom: 10px;
+}
+
+#about_content dd{
+    margin-bottom: 25px;
+}
+
+#about_content dd blockquote.modify{
+    margin: 0px;
+}
+
+#about_content dd blockquote.modify:after{
+    top: inherit;
+}
+
+#about_content dd blockquote.modify p{
+    font-size: large;
+    text-align: center;
+}
+#about_content dd blockquote.modify p strong{
+    color: #77777F;
+}
+#about_content dd blockquote.modify small{
+    padding-top: 10px;
+    text-align: center;
+}
+
+#about_content dd strong{
+    /*color: #6B6B6B;*/
+    color: #0088CC;
+}
+
+#about_content dd br{
+    padding: 10px 0;
+}
+
+#about_not ul{
+    margin-top: 30px;
+}
+
+#about_not li{
+   color: #0088CC;
+}
+
+#about_not li p.lead{
+    color: #333333;
+}
+
+#about_bottom img{
+    margin-bottom: 20px;
+}
+
+#about_team{
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+#about_team p strong{
+    font-size: larger;
+}
+
+#about_team .thumbnail{
+border: none;
+box-shadow: none;
+}
+
+#about_team img{
+    -webkit-box-shadow: 2px 2px 2px 2px);
+    box-shadow: 2px 2px 2px 2px;
+}
+
+#about_team p.lead{
+    margin-bottom: 0;
+}
+
+#about_team .text-info{
+    margin-bottom: 4px;
+}
+
+/* -----POLICY------- */
+
+#policy_content{
+
+}
+
+
+/* -----READING A POSTING------- */
+
+#read_posting hr{
+    margin: 0;
+}
+
+#read_posting .illustration-holder
+{
+    text-align: center;
+}
+
+#read_posting .content-holder
+{
+    margin-top: 5px;
+}
+
+#read_posting #subheading{
+    margin: 5px 0px;
+}
+
+#read_posting #illustration{
+    margin: 10px 0px;
+}
+
+
+#article_listings .bootstrap-widget-header h3 {
+    width: 97%;
+}
+
+.more_hyperlink{
+    font-size: smaller;
+}
+
+#learn_navbar{
+    margin-top: 25px;
+}
+
+#learn_navbar a{
+    font-size: 31.5px;
+    line-height: 40px;
+    
+}
+
+#learn_navbar li {
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+    width: 50%;
+    color: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+
+#verifyModal .modal-header{
+    text-align: center;
+}
+
+#verifyModal .modal-body a{
+    font-size: smaller;
+}
+#verifyModal .modal-body a:hover{
+    text-decoration: none;
+}
+
+/* -----WORKSHOPS------- */
+
+a.calendar.btn{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#scheduled_workshops .page-header h1{
+    text-align: center;
+}
+
+#scheduled_workshops .empty{
+    text-align: center;
+}
+
+#scheduled_workshops .empty p{
+    margin-top: 10px;
+}
+
+#scheduled_workshops div.page-header h1{
+    position: relative;
+}
+
+#scheduled_workshops a.btn.calendar{
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.workshop_listing{
+    margin-top: 20px;
+}
+
+/* non-running workshop styles */
+
+.workshop_listing.muted h3{
+    color: #A09595;
+}
+
+.workshop_listing.muted .label-info.label-date{
+    opacity: 0.5;
+}
+
+.workshop_listing.muted .label-important{
+    opacity: 0.5;
+}
+
+.workshop_listing.muted img.media-object{
+    opacity: 0.5;
+}
+
+.workshop_listing.muted blockquote{
+    border-left-style: dotted;
+}
+
+/* non-running workshop styles */
+
+.workshop_listing .rowspan{
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.workshop_listing .rowspan .posting-link{
+    color: inherit;
+}
+
+.workshop_listing .rowspan .posting-link:hover{
+    text-decoration: inherit;
+}
+
+.workshop_listing .hero-unit{
+    padding: 0;
+    margin: 0;
+}
+
+.workshop_listing .bootstrap-widget-header h3 {
+    width: 97%;
+}
+
+.workshop_listing .bootstrap-widget-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D5D5D5;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px;
+}
+
+.workshop_listing .bootstrap-widget {
+    margin-bottom: 0;
+}
+
+.workshop_listing .label-date {
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.workshop_listing .media-object {
+    max-width: 128px;
+    max-height: 128px;
+    min-width: 128px;
+    min-height: 128px;
+}
+
+.workshop_listing .media-body {
+    max-height: 128px;
+}
+
+.workshop_listing .bootstrap-widget-header .label{
+    position: absolute;
+    right: 0;
+    min-width: 135px;
+    text-align: center;
+}
+
+.workshop_listing .posting-text{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.workshop_listing .posting-text p{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    max-height: 128px;
+}
+
+
+.workshop_listing blockquote{
+    margin: 10px 10px 40px 10px;
+    padding-left: 10px;
+}
+
+.workshop_listing blockquote.facilitator{
+    border-left-color: #3A87AD;
+}
+
+.workshop_listing blockquote.company{
+    border-left-color: #B94A48;
+}
+
+.workshop_listing blockquote.location{
+    border-left-color: #468847;
+}
+
+.workshop_listing .media .posting-text br{
+    display: none;
+}
+
+/* -----WORKSHOP VIEW------- */
+
+#date-time span.text-error{
+    margin-left: 10px;
+}
+
+#facilitator .thumbnail{
+    text-align: center;
+}
+
+#facilitator img{
+    margin-top:10px;
+}
+
+#facilitator .thumbnail .well{
+   margin: 0;
+}
+
+#facilitator .thumbnail .well p{
+    margin: 0;
+}
+
+#facilitator .thumbnail .well strong{
+    float: left;
+}
+
+#facilitator .empty, #attachment .empty{
+    text-align: center;
+}
+
+#facilitator .empty p, #attachment .empty p{
+    margin-top: 10px;
+}

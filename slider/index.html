@@ -1,0 +1,73 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Case Pitch</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<!-- Slider -->
+<link href="slider/nivo-slider.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="slider/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="slider/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+    $('#slider').nivoSlider({
+        effect:'fold', //Specify sets like: 'fold,fade,sliceDown,random'
+        slices:25,
+        animSpeed:500, //Slide transition speed
+        pauseTime:3000,
+        startSlide:0, //Set starting Slide (0 index)
+        directionNav:true, //Next & Prev
+        directionNavHide:true, //Only show on hover
+        controlNav:true, //1,2,3...
+        controlNavThumbs:false, //Use thumbnails for Control Nav
+        controlNavThumbsFromRel:false, //Use image rel for thumbs
+        controlNavThumbsSearch: '.jpg', //Replace this with...
+        controlNavThumbsReplace: '_thumb.jpg', //...this in thumb Image src
+        keyboardNav:true, //Use left & right arrows
+        pauseOnHover:true, //Stop animation while hovering
+        manualAdvance:false, //Force manual transitions========================= Automatic/Manual
+        captionOpacity:0.3, //Universal caption opacity
+        beforeChange: function(){},
+        afterChange: function(){},
+        slideshowEnd: function(){}, //Triggers after all slides have been shown
+        lastSlide: function(){}, //Triggers when last slide is shown
+        afterLoad: function(){} //Triggers when slider has loaded
+    });
+});
+</script>
+</head>
+<body>
+<!--<div id="wrapper" >-->
+  <div class="container">
+    <div class="clear"></div>
+    <div class="maincont">
+      <div class="banner-section">
+        <div class="slider">
+        	<div id="slider" class="nivoSlider"> 
+            <img src="slider/banner1.jpg"  alt=""  /> 
+            <img src="slider/banner2.jpg"  alt="" /> 
+            <img src="slider/banner3.jpg"  alt="" /> 
+            <img src="slider/banner4.jpg"  alt="" />
+            <img src="slider/banner5.jpg"  alt="" /> 
+           </div>
+        <div id="htmlcaption" class="nivo-html-caption">
+        	<strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+         </div>
+         <div id="htmlcaption2" class="nivo-html-caption">
+        	<strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+         </div>
+         <div id="htmlcaption3" class="nivo-html-caption">
+        	<strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+         </div>
+         <div id="htmlcaption4" class="nivo-html-caption">
+        	<strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+         </div>
+         </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+<!--</div>-->
+</body>
+</html>

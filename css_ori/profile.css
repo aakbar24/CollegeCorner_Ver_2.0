@@ -1,0 +1,118 @@
+@CHARSET "ISO-8859-1";
+.profile-content{
+	
+}
+
+ #profile-body{
+	/*border-left:1px solid #ddd;
+	min-height:700px !important;
+	margin-left:0;
+	padding-left:20px;*/
+     margin-left: 0;
+}
+
+.profile-menu{
+	
+}
+
+/* Profile menu style
+------------------------------------------------------*/
+.profile-menu-bar {
+    width: 228px;
+    margin: 0px 0 30px;
+    padding: 0;
+    background-color: #fff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+    box-shadow: 0 1px 4px rgba(0,0,0,.065);
+}
+.profile-menu-bar > li > a,.profile-menu-bar .nav-header{
+    display: block;
+    *width: 190px;
+    margin: 0 0 -1px;
+    padding: 8px 14px;
+    border: 1px solid #e5e5e5;
+}
+
+.profile-menu-bar .nav-header{
+	background-color: whitesmoke;
+}
+
+
+.profile-menu-bar > .active > a {
+    position: relative;
+    z-index: 2;
+    padding: 9px 15px;
+    border: 0;
+    text-shadow: 0 1px 0 rgba(0,0,0,.15);
+    -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+    -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+    box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+}
+/* Chevrons */
+.profile-menu-bar .icon-chevron-right {
+    float: right;
+    margin-top: 2px;
+    margin-right: -6px;
+    opacity: .25;
+}
+.profile-menu-bar > li > a:hover {
+    background-color: #f5f5f5;
+}
+.profile-menu-bar a:hover .icon-chevron-right {
+    opacity: .5;
+}
+.profile-menu-bar .active .icon-chevron-right,
+.profile-menu-bar .active a:hover .icon-chevron-right {
+    background-image: url(../images/glyphicons-halflings-white.png);
+    opacity: 1;
+}
+.profile-menu-bar.affix {
+    top: 40px;
+    position: fixed;
+}
+.profile-menu-bar .affix-bottom {
+    position: absolute;
+    bottom: 411px;
+}
+
+
+legend [class^="icon-"],
+legend [class*=" icon-"] {
+	vertical-align: initial;
+}
+
+/* Profile Index Landing Page
+------------------------------------------------------*/
+
+.snippet-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.snippet-more-area{
+    text-align: center;
+}
+
+.snippet-more-area a{
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.snippetWorkshopGrid .table td, .snippetWorkshopGrid .table th, .snippetEventGrid .table td, .snippetEventGrid .table th, .table .empty{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.snippetWorkshopGrid .ui-selectable a.btn{
+    width: 55px;
+}
+
+.snippetWorkshopGrid .ui-selectable tr.link-row:hover, .snippetEventGrid .ui-selectable tr.link-row:hover{
+    background-color: #EEEEEE;
+    cursor: pointer;
+    color: #0088CC;
+}

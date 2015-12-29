@@ -1,0 +1,95 @@
+@CHARSET "ISO-8859-1";
+.tbrelational-column 
+{
+	border-bottom: solid 1px #08C !important;
+}
+.resume-detail-row td {
+	background-color: white !important;
+	padding:10px;
+}
+
+.resume-details,.resume-item-details
+{
+	background-color: white;
+	padding:10px;
+}
+
+.resume-details .page-header{
+	margin-bottom:10px;
+}
+
+.resume-details .dl-horizontal{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.resume-details .dl-horizontal dt, .resume-details .dl-horizontal dd{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.tagit-row-inline{
+	display:inline-block;
+}
+
+
+.tagit-row-inline ul.tagit li.tagit-new {
+    padding: 0px !important;
+}
+
+.tagit-row-inline ul.tagit {
+    height: 20px;
+	padding: 0px 6px 8px 5px;
+	overflow: hidden;
+}
+
+.input-prepend .tagit{
+	display: inline-block;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	
+	-webkit-border-top-left-radius: 0px;
+	-moz-border-top-left-radius: 0px;
+	
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-bottom-left-radius: 0px;
+	
+	border: 1px solid #ccc;
+}
+
+#employer-search-form .normal-search input[type="submit"].btn, #employer-search-form  .normal-search button[type="submit"].btn , #employer-search-form  .normal-search button[type="button"].btn{
+	vertical-align: top;
+	margin-right:0.5em;
+}
+
+#employer-search-form .help-block{
+	margin-top:10px;
+}
+
+ .list-view{
+	padding-top:0px;
+}
+
+.search-control-row{
+	margin-top:10px;
+}
+
+input[type="checkbox"].resume-item-checkbox, input[type="checkbox"].resume-item-checkbox-all  {
+	vertical-align:top;
+}
+.check-all-div{
+	margin-top:5px;
+}
+.search-bulk-actions{
+	border-bottom:1px solid #e5e5e5;
+	margin-bottom:10px;
+}
+
+.fav-highlight{
+	color:gold;
+	text-decoration:none;
+}
+
+.relatedinfo-container{
+	padding:0px !important;	
+}

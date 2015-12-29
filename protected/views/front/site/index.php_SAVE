@@ -1,0 +1,245 @@
+<?php
+/* @var $this SiteController */
+$this->layout = '//layouts/index';
+$this->pageTitle = Yii::app()->name;
+$this->pageNoPadding = true;
+?>
+
+<div class="slider-sec drop-shadow curved curved-hz-1">
+
+    <div id="carousel" class="container wrap">
+        <div class="row-fluid">
+		<br>
+							<table align="left">
+							<tr>
+							<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php
+							$this->widget('bootstrap.widgets.TbButton', array(
+								'label' => Yii::t('view', 'Colleges, Universities, ICTC/IEPs, Other'),
+								'type' => 'primary', // null, 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
+								'size' => 'null', // null, 'large', 'small' or 'mini'
+								'url' => array('/auth/login'),
+							));
+							?></td>
+							</tr>
+							
+
+        <TABLE WIDTH="100%">
+        <TR>
+        <TD width="130px">
+       	   <font color=#0088CC>
+       	   &nbsp;<br><br>
+       	   A <b><u>Free</u></b> Service<br><br>
+       	   Easy registration for employers and students/candidates<br><br>
+
+           <?php 
+                $BROWSER_NAME=Yii::app()->browser->getBrowser();
+                if ($BROWSER_NAME=="Internet Explorer") {
+                     $BULLET_IMAGE_FILE=Yii::app()->getBaseUrl() . '/files/images/ArrowBulletSmall.png'; 
+                     $WIDHEI_STR=" width=10 height=10 ";
+                }
+                else {
+                     $BULLET_IMAGE_FILE=Yii::app()->getBaseUrl() . '/files/images/ArrowBullet.png'; 
+                     $WIDHEI_STR=" width=18 height=18 ";
+                }
+           ?>
+
+       	   <IMG SRC="<?php echo $BULLET_IMAGE_FILE . '"' . $WIDHEI_STR; ?> > Experienced<br>
+       	   <IMG SRC="<?php echo $BULLET_IMAGE_FILE . '"' . $WIDHEI_STR; ?> > Entry-level<br>
+       	   <IMG SRC="<?php echo $BULLET_IMAGE_FILE . '"' . $WIDHEI_STR; ?> > Co-op<br>
+       	   <IMG SRC="<?php echo $BULLET_IMAGE_FILE . '"' . $WIDHEI_STR; ?> > Internship<br><br><br><br>&nbsp;
+       	   </font>
+        </TD>
+
+        <TD>  
+            <div class="span11 offset0">
+ 
+                <?php
+                if (!empty($slideItems))
+                    $this->widget('bootstrap.widgets.TbCarousel', array(
+                        'items' => $slideItems,
+                        'htmlOptions' => array('id' => 'homePageSlider')
+                    ));
+                ?>
+            </div>
+		</TD>
+		<TD width="130px"> &nbsp; </TD>
+        </TR>
+        </TABLE>  
+
+        </div>
+
+    </div>
+	
+</div>
+
+<div id="main" class="wrap">
+
+<div class="wedge">
+<div class="row-fluid">
+
+    <div class="span6 student bump">
+        <div class="well well-large">
+            <hgroup class="text-center">
+                <?php echo CHtml::image(Yii::app()->getBaseUrl().'/files/images/icon_student.png'); ?>
+                <h1>Students/Candidates</h1>
+            </hgroup>
+            <p><?php echo Yii::t('view', 'index.student.description') ?></p>
+
+            <p>
+                <?php echo CHtml::link(Yii::t('view', 'index.learn_more'), array('/site/page', 'view' => 'about', '#' => 'student_success')); ?>
+            </p>
+
+            <div class="text-center">
+                <?php
+                                $this->widget('bootstrap.widgets.TbButton', array(
+                                    'label' => Yii::t('view', 'index.community_btn'),
+                                    'type' => 'primary', // null, 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
+                                    'size' => 'large', // null, 'large', 'small' or 'mini'
+                                    'url' => array('/community/forum/index'),
+                                ));
+                                ?>
+                <?php
+                                $this->widget('bootstrap.widgets.TbButton', array(
+                                    'label' => Yii::t('view', 'index.resume_btn'),
+                                    'type' => 'primary', // null, 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
+                                    'size' => 'large', // null, 'large', 'small' or 'mini'
+                                    'url' => array('/resume/resumePost/post'),
+                                ));
+                                ?>
+            </div>
+        </div>
+    </div>
+    <div class="span6 employer bump">
+        <div class="well well-large">
+            <hgroup class="text-center">
+                <?php echo CHtml::image(Yii::app()->getBaseUrl().'/files/images/icon_employer.png'); ?>
+				<br />
+                <h1>Employers</h1>
+            </hgroup>
+            <p><?php echo Yii::t('view', 'index.employer.description') ?></p>
+
+            <p>
+                <?php echo CHtml::link(Yii::t('view', 'index.learn_more'), array('/site/page', 'view' => 'about', '#' => 'employer_success')); ?>
+            </p>
+
+            <div class="text-center">
+
+                <?php
+                                $this->widget('bootstrap.widgets.TbButton', array(
+                                    'label' => Yii::t('view', 'index.request_workshop_btn'),
+                                    'type' => 'primary', // null, 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
+                                    'size' => 'large', // null, 'large', 'small' or 'mini'
+                                    'url' => array('/workshop/workshop/create'),
+                                ));
+                                ?>
+                <?php
+                                $this->widget('bootstrap.widgets.TbButton', array(
+                                    'label' => Yii::t('view', 'index.fill_position_btn'),
+                                    'type' => 'primary', // null, 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
+                                    'size' => 'large', // null, 'large', 'small' or 'mini'
+                                    'url' => array('/resume/employer/index'),
+                                ));
+                                ?>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="row-fluid">
+    <!-- Quote -->
+    <div class="span12 bump text-center catchy-quote">
+        <blockquote class="modify">
+            <p><?php echo Yii::t('view','index.attain') ?></p>
+        </blockquote>
+    </div>
+</div>
+
+<div id="resource_area" class="row-fluid">
+    <!-- Resources, Workshops & Certifications -->
+    <div class="span4 bump">
+        <div class="rect">
+            <div class="rect-header text-center">
+                <h3><?php echo Yii::t('view', 'events_lb'); ?></h3>
+            </div>
+            <div class="rect-body">
+                <p><?php echo Yii::t('view', 'index.text.events') ?></p>
+				<br />
+                <em><?php echo Yii::t('view', 'index.text.events.i') ?></em>
+
+
+                    <?php echo CHtml::link('View Details &raquo;', array('event/event/index')); ?>
+            </div>
+        </div>
+    </div>
+    <div class="span4 bump">
+        <div class="rect">
+            <div class="rect-header text-center">
+                <h3><?php echo Yii::t('view', 'workshop_lb'); ?></h3>
+            </div>
+            <div class="rect-body">
+                <p><?php echo Yii::t('view', 'index.text.workshops') ?></p>
+				<br />
+                <em><?php echo Yii::t('view', 'index.text.workshops.i') ?></em>
+
+                <?php echo CHtml::link('View Details &raquo;', array('site/workshops')); ?>
+            </div>
+        </div>
+    </div>
+    <div class="span4 bump">
+        <div class="rect">
+            <div class="rect-header text-center">
+                <h3><?php echo Yii::t('view', 'Certifications / Sponsors');  ?></h3>
+            </div>
+            <div class="rect-body">
+                <p><?php echo Yii::t('view', 'index.text.certifications') ?></p>
+				<br />
+                <em><?php echo Yii::t('view', 'index.text.certifications.i') ?></em>
+
+                    <?php echo CHtml::link('View Details &raquo;', array('certificate/certification/index')); ?>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="row-fluid ">
+    <h2><?php echo Yii::t('view', 'articles_lb'); ?></h2>
+
+    <?php
+    $this->widget('zii.widgets.CListView', array(
+        'dataProvider' => $articleData,
+        'itemView' => '//layouts/_article_listing',
+        'emptyText' => "<p>No recent activity</p>",
+        'template' => '{items}',
+        'ajaxUpdate' => false,
+        'htmlOptions' => array('class' => 'listView_articles')
+    ));
+    ?>
+
+</div>
+
+</div>
+
+<div class="row-fluid partner">
+    <!-- Partners -->
+    <div class="span12 text-center">
+        <h2>Partners</h2>
+        <a href="http://www.cips.ca/" class="logo">
+            <?php echo CHtml::image(Yii::app()->getBaseUrl() . '/files/images/partners/cips.jpg', "CIPS"); ?>
+        </a>
+        <a href="http://www.baylaan.com/" class="logo"><?php echo CHtml::image(Yii::app()->getBaseUrl() . '/files/images/partners/baylaan.png', "Baylaan Technologies"); ?></a>
+        
+        <a href="http://www-03.ibm.com/certify/" class="logo"><?php echo CHtml::image(Yii::app()->getBaseUrl() . '/files/images/partners/ibm.jpg', "IBM"); ?></a>
+        <a href="http://www.cga-ontario.org/" class="logo"><?php echo CHtml::image(Yii::app()->getBaseUrl() . '/files/images/partners/CGA.jpg', "Certified General Accounting (CGA)"); ?></a>
+        <a href="http://www.microsoft.com/learning/en-us/certification-overview.aspx" class="logo"><?php echo CHtml::image(Yii::app()->getBaseUrl() . '/files/images/partners/Microsoft.jpg', "Microsoft"); ?></a>
+        <a href="http://www.oacett.org/page.asp?P_ID=98" class="logo"><?php echo CHtml::image(Yii::app()->getBaseUrl() . '/files/images/partners/Oacett.jpg', "OACETT"); ?></a>
+        <a href="http://www.payroll.ca/" class="logo"><?php echo CHtml::image(Yii::app()->getBaseUrl() . '/files/images/partners/Canadian Payroll.png', "Canadian Payroll Association"); ?></a>
+    </div>
+</div>
+
+</div>
+
+

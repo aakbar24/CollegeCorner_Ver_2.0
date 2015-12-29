@@ -1,0 +1,39 @@
+<?php
+
+$MAIL_to      = $KEEP_EMAIL_ADR;
+$MAIL_subject = "Admin - College CornerStone - Password Recovery";
+$MAIL_header  = "MIME-version: 1.0 \r\n" .
+                "Content-type: text/html; charset=iso-8859-1 \r\n" .
+                "From: Admin - College CornerStone <non-reply@collegecornerstone.com>";
+$MAIL_message =
+"<html> " .
+"<body> " .
+"<div> " .
+"<font size=5 color=Blue><b>College CornerStone</b></font>" .
+"</div> " .
+"<b>You have requested to reset your password using the password recovery service.</b> " .
+"<br> " .
+"<p>You may now " . CHtml::link('log in', Yii::app()->getBaseUrl(true).'/auth/login') . 
+         " with your Username / E-Mail and the temporary Password.</p> " .
+"<br> " .
+"<ul> " .
+"	<li>You Temporary password: " . $KEEP_TEMP_PWD . "</li> " . 
+" </ul> " .
+"<br/> " .
+"<p> " .
+"	To protect your account security, please update your password immediately after login in with the temporary password. " .
+"</p> " .
+"<hr> " .
+"<div> " .
+"  Note: this email is sent from an automated email address, please do not reply to this address. " .
+"</div> " .
+"</hr> " .
+"</body> " .
+"</html> ";
+
+mail($MAIL_to, $MAIL_subject, $MAIL_message, $MAIL_header);
+
+// echo $MAIL_message;
+// exit;
+
+?>

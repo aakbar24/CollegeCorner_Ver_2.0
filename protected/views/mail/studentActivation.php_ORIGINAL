@@ -1,0 +1,52 @@
+<?php /** @var $student Student */
+      /** @var $user User */?>
+
+<br />
+
+<div>
+    <h3>Thank you <?php echo $user->first_name; ?> for registering for College Cornerstone.</h3>
+
+    <br />
+
+    <div>
+        <table border="1" cellspacing="0" cellpadding="3" style="font:12px Arial;">
+            <tr>
+                <th colspan="2">Student Account Details</th>
+            </tr>
+            <tr><td>Username:</td><td><?php echo $user->username;?></td></tr>
+            <tr><td>Full Name:</td><td><?php echo $user->first_name . " " . $user->last_name;?></td></tr>
+            <tr><td>Email:</td><td><?php echo $user->email;?></td></tr>
+            <tr style="height: 10px !important; background-color: #FFFFFF;"><td style="border-left: none; border-right: none;" colspan="2"></td> </tr>
+            <tr><td>Associated College:</td><td><?php echo $student->college->college_name?></td></tr>
+            <!-- <tr><td>Program:</td><td><?php //echo $student->program->program_name?></td></tr>
+            -->
+            <tr><td>Education Level:</td><td><?php echo !empty($student->educationLevel) ? $student->educationLevel->education_level_name : "N / A"; ?></td></tr>
+            <tr><td>Major:</td><td><?php echo !empty($student->major_name) ? $student->major_name : "N / A"; ?></td></tr>
+            <tr style="height: 10px !important; background-color: #FFFFFF;"><td style="border-left: none; border-right: none;" colspan="2"></td> </tr>
+            <!--<tr><td>Enrollment Date:</td><td><?php //echo !empty($student->enrollment_date) ? $student->enrollment_date : "N / A"; ?></td></tr>
+            -->
+        </table>
+    </div>
+
+    <p>Please <?php echo CHtml::link("<strong>click this link in order to activate your account.</strong>", Yii::app()->getBaseUrl(true).'/register/verify?hash='.$hash); ?> You will be re-directed to the College Cornerstone log-in page, and your account will become active. When you activate your account, you will be able to log into the service by using your <strong>Username / E-Mail and Password</strong>.</p>
+
+    <br />
+
+    <p style="text-decoration: underline;">College Cornerstone can offer a student the following benefits: </p>
+
+    <ul>
+        <li>Find the connections and techniques that will significantly improve your academic success.</li>
+        <li>Communicate with other students in your school, program, and semester. Students can help one another. Tests, assignments and projects suddenly become less of a threat of failing and more of an opportunity for greater <strong>achievement and success</strong>.  </li>
+        <li>Attract the attention of experienced employers who are looking for students that are willing to volunteer, and participate in internships and placements.</li>
+        <li>Keep up on all the latest events, news, and student workshops!</li>
+        <li>Learn how to enhance your soft-skills, and bring into perspective the importance of both getting a job and <strong>keeping it</strong>. </li>
+    </ul>
+</div>
+
+<br />
+
+<hr/>
+
+<div>
+    Note: this email is sent from an automated email address, please do not reply to this address.
+</div>

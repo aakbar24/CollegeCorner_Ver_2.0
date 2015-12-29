@@ -1,0 +1,131 @@
+<?php
+
+/**
+ * This is the base controller for the authentication and authorization.
+ * It allows different -ends to share some particular actions by extending from this class. 
+ * @author Wenbin
+ *
+ */
+
+class DefaultAuthController extends Controller
+{
+	
+	/**
+	 * Declares class-based actions.
+	 */
+	public function actions()
+	{
+		return array(
+				// captcha action renders the CAPTCHA image displayed on the contact page
+				'captcha'=>array(
+						'class'=>'CCaptchaAction',
+						'backColor'=>0xFFFFFF,
+				),
+		);
+	}
+	
+	/**
+	 * A universal login function
+	 * @return mixed -true if login is successful
+	 * 				 -false if user already logged in
+	 * 				 -string the rendered view page in text
+	 */
+	protected function _login()
+	{
+		if (Yii::app()->user->isGuest) {
+			$model=new LoginForm;
+			
+			// if it is ajax validation request
+			if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
+			{
+				echo CActiveForm::validate($model);
+				Yii::app()->end();
+			}
+			
+			// collect user input data
+			if(isset($_POST['LoginForm']))
+			{
+				$model->attributes=$_POST['LoginForm'];
+				// validate user input and redirect to the previous page if valid
+				if($model->validate() && $model->login())
+				{
+					return true;					
+				}
+			}
+			//use the login view in the common folder
+			return $this->render('application.modules.account.views.common.login',array('model'=>$model),true);
+		}
+		else {
+			return false;
+		}
+	}
+	
+	/**
+	 * Logs out the current user and redirect to homepage.
+	 */
+	public function actionLogout()
+	{
+		Yii::app()->user->logout();
+		$this->redirect(Yii::app()->createAbsoluteUrl($this->getModule()->returnUrl));
+	}
+	
+	public function actionForgot()
+	{
+		$model=new ForgotPasswordForm();
+	
+		if (isset($_POST['ForgotPasswordForm']) ){
+			$model->attributes=$_POST['ForgotPasswordForm'];
+			//$this->refresh();
+			
+			if($model->validate())
+			{
+				$tempPassword=Randomness::randomString(16,true);
+				$model=User::model()->findByAttributes(array('email'=>$model->email));
+				$model->isNewPassword=true;
+				$model->password=$tempPassword;
+
+				$KEEP_TEMP_PWD  = $tempPassword;
+				$KEEP_EMAIL_ADR = $model->email;
+			
+				if ($model->save()){
+					//use 'passwordrest' view from views/mail
+					$mail = new YiiMailer('passwordReset', array('tempPassword' =>$tempPassword));
+					//render HTML mail, layout is set from config file or with $mail->setLayout('layoutName')
+					$mail->render();
+					//set properties as usually with PHPMailer
+					$mail->From = Yii::app()->params['nonReplyEmail'];
+					$mail->FromName = Yii::app()->name;
+					$mail->Subject = Yii::app()->name.' - Password Rest';
+					$mail->AddAddress(YII_DEBUG?Yii::app()->params['adminEmail']:$model->email);
+                                        // $mail->AddAddress("adnan.aybas@gmail.com");
+
+					// send
+						
+					if ($mail->Send()) {
+						$mail->ClearAddresses();
+						Yii::app()->user->setFlash('success', Yii::t('app', 'msg.success.password_reset'));
+
+                                                $pos_01 = strpos($KEEP_EMAIL_ADR, '@hotmail.com');
+                                                $pos_02 = strpos($KEEP_EMAIL_ADR, '@outlook.com');
+                                                $pos_03 = strpos($KEEP_EMAIL_ADR, '@live.com');
+          
+                                           //   if (($pos_01 == true) || ($pos_02 == true) || ($pos_03 == true)) {  
+                                                if (($KEEP_EMAIL_ADR == 'jworboy@hotmail.com') || ($KEEP_EMAIL_ADR == 'dummy_usr@outlook.com')) {
+             	                                      include 'ReSendEMail.php';
+                                                }               
+
+					} else {
+						Yii::app()->user->setFlash('error','Error while sending email: '.$mail->ErrorInfo);
+					}
+					$this->refresh(true);
+				}
+			
+			}
+			
+		}
+		$this->render('application.modules.account.views.common.forgot',array('model'=>$model));
+	}
+
+
+	
+}

@@ -1,0 +1,72 @@
+'The purpose of this script is to place a flight booking and generate the order number. 
+
+'Force the tester to initialize  the variable
+Option Explicit
+'declare  variable ( if there is any variable).following are example of VB script of variable declaration, displaying message and 
+'print message.
+
+Dim sUser, iPass , iDouble,iCount
+sUser = "Mercury"
+iPass = 4
+iDouble = 4.111
+
+MsgBox "This is value for ipass " & iPass
+If iPass = 4  Then ' Example for If condition
+print "value for  sUser   = " & sUser
+
+End If
+
+print "value for  iPass   = " & iPass
+print "value for  sUser   = " & iDouble
+
+
+'Load any external data source for parameterization 
+'Datatable.Import"C:\QTP_ProjectData\CustomerData.xlsx"
+
+'Start Test Steps.
+'Steps 1. Run the Flight Booking App
+SystemUtil.Run("C:\Program Files (x86)\HP\Unified Functional Testing\samples\flight\app\flight4a.exe")
+
+'Steps 2. Login to the APP
+'Dialog("Login").Static("Static").Check CheckPoint("FlightPic")
+Dialog("Login").Static("Static").Check CheckPoint("Flight_Img100")
+
+'Dialog("Login").Static("Static").Check CheckPoint("Img2")
+Dialog("Login").WinEdit("Agent Name:").Set "Mercury" ' Use of static data
+'Dialog("Login").WinEdit("Agent Name:").Set sUser
+
+Dialog("Login").WinEdit("Password:").Set "Mercury"
+Dialog("Login").WinButton("OK").Click
+wait 10 ' this is VB Wait statement
+
+'For iCount = 1 To 2 ' step 3 will run for twice. Example for For - Next
+		'Steps 3. select data, From and TO
+		Window("Flight Reservation").ActiveX("MaskEdBox").Type "111114"
+		wait 2
+		Window("Flight Reservation").WinComboBox("Fly From:").Select DataTable("From", dtGlobalSheet)'parameterization from local Xls
+		wait 2
+		Window("Flight Reservation").WinComboBox("Fly To:").Select DataTable("TO", dtGlobalSheet) 'parameterization from local xls
+		'Window("Flight Reservation").WinComboBox("Fly From:").Select "Frankfurt"
+		'Window("Flight Reservation").WinComboBox("Fly To:").Select "London"
+		'wait 2
+		
+		'Step 4. Click Filght button for search
+		Window("Flight Reservation").WinButton("FLIGHT").Click
+		
+		'Step 5. Select the flight
+		Window("Flight Reservation").Dialog("Flights Table").WinButton("OK").Click
+		
+		'Step 6. Fill the form 
+		Window("Flight Reservation").WinEdit("Name:").Set "Cus1"
+		'Window("Flight Reservation").WinEdit("Name:").Set DataTable.Value("sCustomerName") 'parameterization from external file
+		
+		'Step 7. Click Insert
+		Window("Flight Reservation").WinButton("Insert Order").Click
+		wait 2
+		
+		Window("Flight Reservation").WinMenu("Menu").Select "File;New Order"
+		'datatable.SetNextRow 'parameterization from external file( to read next row)
+		wait 5
+'Next
+'Step 8. Exit the app
+Window("Flight Reservation").WinMenu("Menu").Select "File;Exit"

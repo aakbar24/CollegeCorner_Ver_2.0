@@ -1,0 +1,37 @@
+
+.admin_slider_table td{
+    vertical-align: middle;
+    text-align: center;
+}
+
+.admin_slider_table img{
+    max-width: 100px;
+}
+
+#area_image, #area_position{
+    text-align: center;
+}
+
+#area_position select{
+    width: auto;
+}
+
+#area_slide .ordinal{
+    position: absolute;
+    z-index: 1;
+    padding-left: 10px;
+    color: white;
+}
+
+#view_slider img{
+    max-width: 960px;
+    max-height: 345px;
+    min-width: 960px;
+    min-height: 345px;
+}
+
+.carousel .carousel-control { visibility: hidden; }
+
+.full_width{
+    width: 100%;
+}

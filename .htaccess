@@ -1,0 +1,19 @@
+ErrorDocument 404 default
+AddDefaultCharset utf-8
+
+Options +Indexes +FollowSymLinks
+IndexIgnore */*
+RewriteEngine on
+
+#RewriteBase /colcl/
+
+# Make the backend accessible via url: http://site/backend.
+#RewriteRule ^backend/auth/captcha?v=(.) /site/captcha?v=$1 
+RewriteRule backend back.php
+
+# If a directory or a file exists, use it directly.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Otherwise forward it to index.php.
+RewriteRule . index.php
