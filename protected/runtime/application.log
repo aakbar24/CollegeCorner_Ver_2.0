@@ -6371,3 +6371,166 @@ Stack trace:
 REQUEST_URI=/CollegeCorner_Ver_2.0/fonts/fontawesome-webfont.ttf?v=4.3.0
 HTTP_REFERER=http://localhost/CollegeCorner_Ver_2.0/css/font-awesome.min.css
 ---
+2015/12/29 18:35:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/profile.css".' in C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/profile.css')
+#1 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\CollegeCorner_Ver_2.0\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CComponent->__call('runEnd', Array)
+#6 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/CollegeCorner_Ver_2.0/css/profile.css
+HTTP_REFERER=http://localhost/CollegeCorner_Ver_2.0/profile/index
+---
+2015/12/29 18:35:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/contact_us.png".' in C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/contact_...')
+#1 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\CollegeCorner_Ver_2.0\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CComponent->__call('runEnd', Array)
+#6 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/CollegeCorner_Ver_2.0/images/contact_us.png
+HTTP_REFERER=http://localhost/CollegeCorner_Ver_2.0/profile/index
+---
+2015/12/29 18:35:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\CollegeCorner_Ver_2.0\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CComponent->__call('runEnd', Array)
+#6 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/CollegeCorner_Ver_2.0/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/CollegeCorner_Ver_2.0/css/font-awesome.min.css
+---
+2015/12/29 18:35:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\CollegeCorner_Ver_2.0\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CComponent->__call('runEnd', Array)
+#6 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/CollegeCorner_Ver_2.0/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/CollegeCorner_Ver_2.0/css/font-awesome.min.css
+---
+2015/12/29 18:35:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\CollegeCorner_Ver_2.0\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CComponent->__call('runEnd', Array)
+#6 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/CollegeCorner_Ver_2.0/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/CollegeCorner_Ver_2.0/css/font-awesome.min.css
+---
+2015/12/29 18:35:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "profile/images/favicon.png".' in C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('profile/images/...')
+#1 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\CollegeCorner_Ver_2.0\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CComponent->__call('runEnd', Array)
+#6 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/CollegeCorner_Ver_2.0/profile/images/favicon.png
+HTTP_REFERER=http://localhost/CollegeCorner_Ver_2.0/profile/index
+---
+2015/12/29 18:36:25 [error] [exception.CException] exception 'CException' with message 'AuthController cannot find the requested view "login".' in C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 C:\wamp\www\CollegeCorner_Ver_2.0\protected\modules\account\controllers\front\AuthController.php(48): CController->render('login', Array)
+#2 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\actions\CInlineAction.php(49): AuthController->actionLogin()
+#3 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#7 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('account/auth/lo...')
+#8 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\wamp\www\CollegeCorner_Ver_2.0\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#10 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#11 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#12 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CComponent->__call('runEnd', Array)
+#13 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CWebApplication->runEnd('front')
+#14 {main}
+REQUEST_URI=/CollegeCorner_Ver_2.0/auth/login
+HTTP_REFERER=http://localhost/CollegeCorner_Ver_2.0/profile/index
+---
+2015/12/29 21:12:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/loginIcon.png".' in C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/loginIco...')
+#1 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\CollegeCorner_Ver_2.0\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CComponent->__call('runEnd', Array)
+#6 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/CollegeCorner_Ver_2.0/images/loginIcon.png
+HTTP_REFERER=http://localhost/CollegeCorner_Ver_2.0/
+---
+2015/12/29 21:12:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/contact_us.png".' in C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/contact_...')
+#1 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\CollegeCorner_Ver_2.0\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CComponent->__call('runEnd', Array)
+#6 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/CollegeCorner_Ver_2.0/images/contact_us.png
+HTTP_REFERER=http://localhost/CollegeCorner_Ver_2.0/
+---
+2015/12/29 21:12:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff2".' in C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\CollegeCorner_Ver_2.0\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CComponent->__call('runEnd', Array)
+#6 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/CollegeCorner_Ver_2.0/fonts/fontawesome-webfont.woff2?v=4.3.0
+HTTP_REFERER=http://localhost/CollegeCorner_Ver_2.0/css/font-awesome.min.css
+---
+2015/12/29 21:12:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.woff".' in C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\CollegeCorner_Ver_2.0\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CComponent->__call('runEnd', Array)
+#6 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/CollegeCorner_Ver_2.0/fonts/fontawesome-webfont.woff?v=4.3.0
+HTTP_REFERER=http://localhost/CollegeCorner_Ver_2.0/css/font-awesome.min.css
+---
+2015/12/29 21:12:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/fontawesome-webfont.ttf".' in C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/fontaweso...')
+#1 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\CollegeCorner_Ver_2.0\protected\components\WebApplicationEndBehavior.php(25): CApplication->run()
+#3 [internal function]: WebApplicationEndBehavior->runEnd('front')
+#4 C:\wamp\www\CollegeCorner_Ver_2.0\yii\framework\base\CComponent.php(260): call_user_func_array(Array, Array)
+#5 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CComponent->__call('runEnd', Array)
+#6 C:\wamp\www\CollegeCorner_Ver_2.0\index.php(28): CWebApplication->runEnd('front')
+#7 {main}
+REQUEST_URI=/CollegeCorner_Ver_2.0/fonts/fontawesome-webfont.ttf?v=4.3.0
+HTTP_REFERER=http://localhost/CollegeCorner_Ver_2.0/css/font-awesome.min.css
+---
