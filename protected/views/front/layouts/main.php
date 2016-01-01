@@ -5,11 +5,11 @@ include_once('/../../modules/account/models/forms/LoginForm.php');
 // for student register
 include_once('/../../modules/account/models/forms/RegisterForm.php');
 include_once('/../../modules/account/models/forms/StudentRegisterForm.php');
-// this is test for github
+
 ?>
 <!DOCTYPE html>
 <html>
-	<head>
+<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -30,17 +30,16 @@ include_once('/../../modules/account/models/forms/StudentRegisterForm.php');
 		<![endif]-->
 
 	</head>
-	<body id="home">
 
-		<!-- ============ PAGE LOADER START ============ -->
+<body id="home">
+    <!-- ============ PAGE LOADER START ============ -->
 
-		<div id="loader">
+<!--		<div id="loader">
 			<i class="fa fa-cog fa-4x fa-spin"></i>
-		</div>
+		</div>-->
 
 		<!-- ============ PAGE LOADER END ============ -->
-
-		<!-- ============ NAVBAR START ============ -->
+    	<!-- ============ NAVBAR START ============ -->
 
 		<div class="fm-container">
 			<!-- Menu -->
@@ -48,100 +47,80 @@ include_once('/../../modules/account/models/forms/StudentRegisterForm.php');
 				<div class="button-close text-right">
 					<a class="fm-button"><i class="fa fa-close fa-2x"></i></a>
 				</div>
-				<ul class="nav" id="nav">
-					<li class="active"><a href="#home">Home</a></li>
-					<li><a href="/CollegeCorner_Ver_2.0/event/index">Jobs</a></li>
-					<li><a href="<?php echo Yii::app()->baseUrl; ?>/protected/views/front/layouts/post-a-resume.html">Post a job</a></li>
-					<li><a href="candidates">Candidates</a></li>
-<!--					<li><a href="post-a-resume.html">Post a Resume</a></li>-->
-                                         <li><?php echo CHtml::link(Yii::t('view','Post a Resume'), array('/site/page', 'view' => 'post-a-resume'))?></li>
-                                        
-					<li><a href="#">Pages</a>
-						<ul>
-							<li><a href="job-details.html">Job Details</a></li>
-							<li><a href="resume.html">Resume</a></li>
-							<li><a href="company.html">Company</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="post.html">Single Post</a></li>
-							<li><a href="about.html">About Us</a></li>
-                                                        <li><?php echo CHtml::link(Yii::t('view', 'menu.testimonials_lb'), array('/site/page', 'view' => 'testimonials'))?></li>
+                                                <div id="mainmenu">
+	<?php $this->widget('ext.AjaxMenu',array(
+  'items'=>array(
+      array('label'=>'Home', 'url'=>array('/site'), 'linkOptions' => array('id' => 'idname'), 'ajax' => false),
+      array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),//, 'ajax' => array('update' => '#content')),
+      array('label'=>'Jobs', 'url'=>array('/site/page', 'view'=>'Jobs')),
+      array('label'=>'Post a job', 'url'=>array('/site/page', 'view'=>'Post a job')),
+      array('label'=>'post-a-resume', 'url'=>array('/site/page', 'view'=>'post-a-resume')),
+      array('label'=>'Pages', 'url'=>array('/site/page', 'view'=>'Pages')),
+      
+      array('label'=>'Contact', 'url'=>array('/site/contact')),
+    // array('label'=>'Register', 'url'=>array(''),'linkOptions'=>array('class' => 'link-register','id'=>'register')),
+     // array('label'=>'Login', 'url'=>array('#'),'itemOptions'=>array('class' => 'login'),  'visible'=>Yii::app()->user->isGuest),
+     // array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+  ),
+  'optionalIndex'=>true,
+  'ajax'=>array(
+      'update' => '#main-content',
+  ),
+  'randomID'=>true,
+)); ?>
+                                                    
+                                                    
 
-<!--                                                        <li><a href="<?php echo CHtml::link(Yii::t('view', 'menu.testimonials_lb'), array('/site/page', 'view' => 'testimonials'))?>">Testimonials</a></li>-->
-							<li><a href="options.html">Options</a></li>
-						</ul>
-					</li>
-					<li><a class="link-register">Register</a></li>
-					<li><a class="link-login">Login</a></li>
-					
-				
-				</ul>	
-				<?php $this->widget('zii.widgets.CMenu',array(
-	'encodeLabel'=>false,
+		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-				//array('label'=>'Testimonialsss  |', 'url'=>array('/site/page', 'view' => 'testimonials')),
-				array('label'=>'<img src="'.Yii::app()->request->baseUrl.'/images/contact_us.png" /> Contact Us |', 'url'=>array('/site/contact')),
-			//	array('label'=>'<img src="'.Yii::app()->request->baseUrl.'/images/loginIcon.png" /> Login ', 'url'=>array('/auth/login'), 'id'=>'loginModal','visible'=>Yii::app()->user->isGuest),
-			
-			array('label'=>'<img src="'.Yii::app()->request->baseUrl.'/images/loginIcon.png" /> Login ','url'=>(Yii::app()->request->baseUrl.'/auth/login'),'visible'=>Yii::app()->user->isGuest),
-			
+				array('label'=>'Register','url'=>array("#"),'items'=>array(
+                                 array('label'=>'Student Register', 'url'=>array('#'),'linkOptions'=>array('class' => 'link-register')),
+                                  array('label'=>'Employer Register', 'url'=>array('#'),'linkOptions'=>array('class' => 'link-register'))  
+                                    )),
+				array('label'=>'Login', 'url'=>array('#'), 'linkOptions'=>array('class' => 'link-login'),'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/auth/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
 		)); ?>
 	
+	</div><!-- mainmenu -->
+				
+				
+	
 			</div>
-				</ul>		
+				
 			</div>
-			<!-- end Menu -->
-		</div>
+        
+        <!-- ============ NAVBAR END ============ -->
 
-		<!-- ============ NAVBAR END ============ -->
-<!-- Main content start -->
-		
-		  <div id="main-content"><!--class="<?php //echo $this->mainContainer ? 'container ' : '' ?> <?php //echo $this->pageNoPadding ? 'pageNoPadding' : 'pageFullPadding' ?>">-->
-        <?php //if (isset($this->breadcrumbs)): ?>
-            <?php
-//            $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
-//                'links' => $this->breadcrumbs,
-//            ));
-//            ?>
-            <!-- breadcrumbs -->
-        <?php //endif ?>
+<div  id="main-content">
 
-        <?php echo $content; ?>
-        <div class="clearfix"></div>
+<!--	<div id="header">
+		<div id="logo"><?php //echo CHtml::encode(Yii::app()->name); ?></div>
+	</div> header -->
 
-</div>
-		
-		<!-- Main content END -->
-		<!-- ============ HEADER START ============ -->
+	
+	<?php //if(isset($this->breadcrumbs)):?>
+		<?php //$this->widget('zii.widgets.CBreadcrumbs', array(
+			//'links'=>$this->breadcrumbs,
+		//)); ?><!-- breadcrumbs -->
+	<?php //endif?>
 
-		<header>
-			<div id="header-background"></div>
-			<div class="container">
-				<div class="pull-left">
-					<div id="logo"><a href="index.html"><img src="<?php echo Yii::app()->baseUrl; ?>/images/logo.png" width="350" height="110" alt="College Corner Stone" /></a></div>
-				</div>
-				<div id="menu-open" class="pull-right">
-					<a class="fm-button"><i class="fa fa-bars fa-lg"></i></a>
-				</div>
-				<div id="searchbox" class="pull-right">
-					<form>
-						<div class="form-group">
-							<label class="sr-only" for="searchfield">Searchbox</label>
-							<input type="text" class="form-control" id="searchfield" placeholder="Type keywords and press enter">
-						</div>
-					</form>
-				</div>
-				<div id="search" class="pull-right">
-					<a><i class="fa fa-search fa-lg"></i></a>
-				</div>
-			</div>
-		</header>
+	<?php echo $content; ?>
 
-		<!-- ============ HEADER END ============ -->
+	<div class="clear"></div>
+
+<!--	<div id="footer">
+		Copyright &copy; <?php //echo date('Y'); ?> by My Company.<br/>
+		All Rights Reserved.<br/>
+		<?php //echo Yii::powered(); ?>
+	</div> footer -->
+
+</div><!-- page -->
 
 
-		<!-- ============ FOOTER START ============ -->
+
+
+<!-- ============ FOOTER START ============ -->
 
 		<footer>
 			<div id="prefooter">
@@ -183,8 +162,7 @@ include_once('/../../modules/account/models/forms/StudentRegisterForm.php');
 		</footer>
 
 		<!-- ============ FOOTER END ============ -->
-
-		<!-- ============ LOGIN START ============ -->
+                <!-- ============ LOGIN START ============ -->
 
 		<div class="popup" id="login">
 			<div class="popup-form">
@@ -197,8 +175,8 @@ include_once('/../../modules/account/models/forms/StudentRegisterForm.php');
 		</div>
 
 		<!-- ============ LOGIN END ============ -->
-
-		<!-- ============ REGISTER START ============ -->
+                
+                <!-- ============ REGISTER START ============ -->
 
 		<div class="popup" id="register">
                     
@@ -210,11 +188,11 @@ include_once('/../../modules/account/models/forms/StudentRegisterForm.php');
 
 		<!-- ============ REGISTER END ============ -->
 
-		<!-- Modernizr Plugin -->
+<!-- Modernizr Plugin -->
 		<script src="<?php echo Yii::app()->baseUrl; ?>/js/modernizr.custom.79639.js"></script>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="<?php echo Yii::app()->baseUrl; ?>/js/jquery-1.11.2.min.js"></script>
+<!--		<script src="<?php echo Yii::app()->baseUrl; ?>/js/jquery-1.11.2.min.js"></script>-->
 
 		<!-- Bootstrap Plugins -->
 		<script src="<?php echo Yii::app()->baseUrl; ?>/js/bootstrap.min.js"></script>
@@ -259,16 +237,5 @@ include_once('/../../modules/account/models/forms/StudentRegisterForm.php');
 
 		<!-- jQuery Settings -->
 		<script src="<?php echo Yii::app()->baseUrl; ?>/js/settings.js"></script>
-<script>
-
-$(document)ready(function(){
-    $('main-content').load('<?php echo Yii::app()->baseUrl; ?>/protected/views/front/layouts/post-a-resume.html');
-$('ul#nav li a').click(function(){
-    var page = $(this).attr('herf');
-   alert("teststs");
-    
-});
-});
-</script>
-	</body>
+</body>
 </html>

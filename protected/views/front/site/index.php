@@ -14,6 +14,32 @@ else $MOBILE_PHONE_ACCESS = 'N';
 <!--<div id="wraper_main"> 
 
 <div id="wraper_cont_main">-->
+<!-- ============ HEADER START ============ -->
+
+		<header>
+			<div id="header-background"></div>
+			<div class="container">
+				<div class="pull-left">
+<!--					<div id="logo"><a href="index.html"><img src="<?php echo Yii::app()->baseUrl; ?>/images/logo.png" width="350" height="110" alt="College Corner Stone" /></a></div>-->
+				</div>
+				<div id="menu-open" class="pull-right">
+					<a class="fm-button"><i class="fa fa-bars fa-lg"></i></a>
+				</div>
+				<div id="searchbox" class="pull-right">
+					<form>
+						<div class="form-group">
+							<label class="sr-only" for="searchfield">Searchbox</label>
+							<input type="text" class="form-control" id="searchfield" placeholder="Type keywords and press enter">
+						</div>
+					</form>
+				</div>
+				<div id="search" class="pull-right">
+					<a><i class="fa fa-search fa-lg"></i></a>
+				</div>
+			</div>
+		</header>
+
+		<!-- ============ HEADER END ============ -->
 
 		<!-- ============ SLIDES START ============ -->
 

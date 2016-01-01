@@ -74,7 +74,9 @@ class DefaultAuthController extends Controller
 	public function actionLogout()
 	{
 		Yii::app()->user->logout();
-		$this->redirect(Yii::app()->createAbsoluteUrl($this->getModule()->returnUrl));
+		//$this->redirect(Yii::app()->createAbsoluteUrl($this->getModule()->returnUrl));
+                //site
+              $this->redirect(Yii::app()->createAbsoluteUrl('site/index'));
 	}
 	
 	public function actionForgot()
